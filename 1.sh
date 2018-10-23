@@ -1,5 +1,6 @@
 #!/bin/bash
 l=`df -h | wc -l`
+l=1
 count=1
 for i in `df -h | tr -s " " | cut -d " " -f 5 | tail -n $((l-1)) | cut -d "%" -f 1` 
 do
